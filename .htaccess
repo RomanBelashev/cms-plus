@@ -1,0 +1,45 @@
+# Кодировка по умолчанию
+AddDefaultCharset UTF-8
+# Файлы, к которым запрещён доступ напрямую
+#<Files~ "((readme\.txt)|\.(htaccess|sql|php))$">
+#Order deny, allow
+#Deny from all
+#</Files>
+
+
+# разрешаем
+<Files "index.php">  
+ Allow from all
+</Files>
+<Files "install.php">
+Allow from all
+</Files>
+<Files "admin.php">
+Allow from all
+</Files>
+# если не будет индекса - не нужно вводить индекс
+#Option -Indexes
+
+#Option +FollowSymLinks
+
+#Если PHP установлен как модуль Apache, установливаем некоторые настройки по умолчанию
+#<IfModule mod_php5.c>
+#отключаем "магические кавычки"
+#php_value magic_quots_gpc 0
+#php_value register_globals 0
+#</IfModule>
+
+#Отключаем по умолчанию директорию index-файла, так как будем использовать mod_rewrite
+#DirectoryIndex Off
+
+#Правила измения запросов
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+
+#корень сайта
+#RewriteBase /  
+
+#Если mode_rewrite не установлен
+<IfDefine !RewriteEngine>
+DirectoryIndex index.php
+</IfDefine>

@@ -1,0 +1,160 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background: #7a8b8b;
+    font-family: "Lucida Console", Arial;
+    font-size: 0.9em;
+}
+
+form {
+    
+    padding: 2px;
+}
+h2 {
+    color: #2591fa;
+}
+
+h3 {
+    
+    color: #8b0a50;
+}
+
+h3:first-line{  /*Псевдоэлемент CSS :first-line используется 
+                для применения стилей (CSS) к первой текстовой 
+                строке элемента, которая определяется после загрузки 
+                и форматирования страницы браузером.*/
+    
+    font-size: 2em;
+    color: #8b0a50;
+    text-transform: uppercase;
+}
+a, a:link, a:visited {
+    
+    color: #0075e7;
+    outline:none;
+}
+
+fieldset {
+    
+    margin: 30px;
+    border: solid 1px #eee;
+    margin-bottom: 18px;
+    padding: 5px 15px;
+}
+
+fieldset legend {
+    padding: 0;
+    margin-left: 0;
+    color: #2591fa;
+}
+/*ie 5-6*/
+* html fieldset legend{
+    background: none;
+    
+}
+
+input{
+    
+    width: 350px;
+    height: 20px;
+}
+
+#content {
+    
+    width: 950px;
+    height: 100% auto;
+    margin-left: 3%;
+    margin-top: 15px;
+    border: 2px solid #00ced1;
+    background: #b0e2ff;
+}
+
+.header {
+    
+    border: 2px solid #00ced1;
+    background: #00ced1;
+}
+
+.steep {
+    
+    border: 2px solid #00ced1;
+    text-align: right;
+    font-weight: bold;
+    color: #8b0a50;
+}
+
+.content {
+    
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.text form textarea {
+    
+    border: 0.5px solid #00ced1;
+}
+
+.text {
+    
+    background: #fff;
+    padding-bottom: 5px;
+}
+
+.text p input {
+    
+    border: 1px solid #00ce11;
+}
+
+.header h2{
+    color: #551a8b;
+}
+
+.header h2:first-letter {
+    
+    color: #00ee00;
+}
+
+.button {
+    background: #b0e2ff;
+    border: 2px solid #eee;
+    height: 38px;
+    width: 125px;
+    margin: 50px 0 0 50px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    font-weight: bold;
+    
+    /* Скруглённые углы */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /*Установка градиента*/
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: -o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: -ms-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    /*тень для кнопки*/
+    -webkit-box-shadow: 0px 3px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 1px rgba(0,0,0,0.2);
+   box-shadow: 0px 3px 1px rgba(0,0,0,0.2);
+   /*Переход для кнопки*/
+    -webkit-transition: All 0.5s ease;
+   -moz-transition: All 0.5s ease;
+   -o-transition: All 0.5s ease;
+   -ms-transition: All 0.5s ease;
+   transition: All 0.5s ease;
+   
+}   
+
+.button:hover{
+    
+    background: #b0e2ff;
+}
